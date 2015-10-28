@@ -1,0 +1,60 @@
+windows IP: 128.95.141.155
+PI      IP: 108.179.185.151
+
+
+Windows listener setup
+C:\Users\jianm\Desktop\quadcopter_driver
+nc -L -p 5001 | mplayer.exe -fps 31 -cache 1024
+
+PI pipe: raspivid -t 999999 -0 - | nc 128.95.141.155 5001
+
+
+
+
+FTP commands:
+
+psftp:
+
+open <IP>
+
+login
+
+get <file name>
+put <file name>
+
+
+Xming notes
+
+enable X11
+do a xlaunch
+start lxde in pi
+
+methods:
+VLC method
+failed: cannot connect
+updates: no idea
+
+mplayer method
+failed: 
+updates
+tragically failed
+
+motion method 
+status: failed, no RPI camera support
+updates:
+http://www.codeproject.com/Articles/665518/Raspberry-Pi-as-low-cost-HD
+failed, again
+-surveillance-camera
+http server method
+mpeg streamer method
+http://blog.miguelgrinberg.com/post/stream-video-from-the-raspberry-pi-camera-to-web-browsers-even-on-ios-and-android
+
+
+VLC src
+http://www.mybigideas.co.uk/RPi/RPiCamera/
+
+console
+http://code.activestate.com/recipes/280500-console-built-with-cmd-object/
+
+keyboard
+http://stackoverflow.com/questions/13207678/whats-the-simplest-way-of-detecting-keyboard-input-in-python-from-the-terminal
